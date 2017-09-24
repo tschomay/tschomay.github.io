@@ -1,8 +1,6 @@
 ---
 layout: page
 title : Blog
-header:
-group : navigation
 ---
 
 <ul>
@@ -12,3 +10,8 @@ group : navigation
     </li>
   {% endfor %}
 </ul>
+
+
+header:
+group : navigation
+
