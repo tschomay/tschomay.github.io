@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Post"
-data: 2017-9-24
+date: 2017-9-24
 categories: jekyll update
 ---
 
