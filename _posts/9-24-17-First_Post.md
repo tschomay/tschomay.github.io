@@ -2,7 +2,7 @@
 layout: post
 title: "First Post"
 date: 2017-9-24
-categories: jekyll update
+categories:
 ---
 
 
