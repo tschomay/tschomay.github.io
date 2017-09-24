@@ -12,6 +12,4 @@ title : Blog
 </ul>
 
 
-header:
-group : navigation
 
