@@ -30,3 +30,6 @@ L. A. Portelli, **T. E. Schomay**, and F. S. Barnes, "Inhomogeneous Background M
 
 ## CV/Resume
 [Resume](/assets/Ted Schomay Resume Web.pdf)
+
+## Contact
+tschomay [at] gmail [dot] com
