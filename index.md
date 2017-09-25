@@ -4,7 +4,7 @@ layout: default
 
 ## Welcome
 Hello! My name is Ted Schomay and I am a PhD student in Bioengineering at the University of Utah. My research is on developing mathematical frameworks to find patterns in big datasets. I use these methods to analyze genome-scale profiles of cancer patients in search of better prognostic tests.
-<img align="right" src="/assets/images/Ted.jpg">
+<img align="right" src="/assets/images/Ted.jpg" height="101" width="100">
 
 ![Ted](/assets/images/Ted.jpg)
 
