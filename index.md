@@ -3,7 +3,7 @@ layout: default
 ---
 
 ## Welcome
-Hello, my name is Ted.
+Hello! I am Ted Schomay.
 
 ## About Me
 I am Ted
