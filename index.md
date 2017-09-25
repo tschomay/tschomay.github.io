@@ -1,10 +1,9 @@
 ---
-layout: page
-title: Ted's Page
+layout: default
 ---
 
-## Welcome 2
-Hello, my name is Ted
+## Welcome
+Hello, my name is Ted.
 
 ## About Me
 I am Ted
