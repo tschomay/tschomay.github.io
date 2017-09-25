@@ -16,9 +16,11 @@ I have mathematically defined and proved the properties of novel methods for the
 DNA copy-number aberrations (CNAs) are a well known hallmark of cancer. However, their exact function is not well understood. We use our mathematical decompositions to uncover patterns of CNAs that predict patient prognosis. These genomic-based prognostic indicators could influence patient treatment and potentially contain insight into the progression of the disease. 
 
 ## Interests
-
+As my current research indicates, I am interested in approaching biomedical problems from a rigorous scientific standpoint. I believe that the key to closing the many gaps in our knowledge of biology and medicine will come from applying logic and methodology from other sciences and engineering. With our modern ability to collect large-scale data from biological systems, I think key advancements will come from machine learning methods and discovery from data. My primary interest is in continuing to push our ability to make discoveries from data and applying these methods to issues at the forefront of modern needs.
 
 ## Hobbies
+In addition to machine 
+
 
 ## Publications
 
