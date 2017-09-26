@@ -29,7 +29,7 @@ P. Sankaranarayanan,\* **T. E. Schomay**,\* K. A. Aiello, and O. Alter, "Tensor 
 L. A. Portelli, **T. E. Schomay**, and F. S. Barnes, "Inhomogeneous Background Magnetic Field in Biological Incubators is a Potential Confounder for Experimental Variability and Reproducibility. *Bioelectromagnetics* 34 (5), 337-348. (July 2013)
 
 ## CV/Resume
-[Resume](/assets/Ted Schomay Resume Web.pdf)
+[Resume](/assets/Ted Schomay Resume.pdf)
 
 ## Contact
 tschomay [at] gmail [dot] com
