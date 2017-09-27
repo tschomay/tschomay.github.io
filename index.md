@@ -23,7 +23,7 @@ Our unsupervised mathematical frameworks enabled us to find patterns of CNAs in 
 As my current research indicates, I am interested in approaching biomedical problems from a rigorous scientific standpoint. I believe that the key to closing the many gaps in our knowledge of biology and medicine will come from applying logic and methodology from other sciences and engineering. With our modern ability to collect large-scale data from biological systems, I think key advancements will come from machine learning methods and discovery from data. My primary interest is in continuing to push our ability to make discoveries from data and applying these methods to issues at the forefront of modern human needs.
 
 ## Hobbies
-When I'm not playing with machine learning and data science, my hobbies include outdoor activities (biking, hiking, climbing, skiing, running, ...), remote control cars and helicopters (check out http://FreestyleXmods.com/ for some things I did 10 years ago!), and board games.
+When I'm not playing with machine learning and data science, my hobbies include outdoor activities (biking, hiking, climbing, skiing, running, ...), remote control cars and helicopters (check out [www.FreestyleXmods.com](http://freestylexmods.com/) for some things I did 10 years ago!), and board games.
 
 
 ## Publications
