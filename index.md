@@ -14,10 +14,10 @@ I mathematically define and prove the properties of novel methods for the simult
 
 In simpler terms, these new mathematical frameworks allow us to find prevalent patterns in multiple large and complicated datasets. We can use these patterns to understand the primary signals in the dataset and separate them from noise and batch effects (i.e., artifacts resulting from experiment or outside sources that affect a subset of the samples).
 
-#### Computation Biology
+#### Computational Biology
 DNA copy-number aberrations (CNAs) are a well-known hallmark of cancer. However, their exact function is not well understood. We use our mathematical decompositions to uncover patterns of CNAs that predict patient prognosis. These genomic-based prognostic indicators could influence patient treatment and potentially contain insight into the progression of the disease.
 
-Our unsupervised mathematical frameworks enabled us to find patterns of CNAs in ovarian cancer that are exclusive to tumor tissue compared with normal, are independent of the microarray used to measure the data, and separate the patient set into two groups with significantly different survival. This resulted in a genomic-based prognostic indicator for ovarian cancer that outperforms and is independent of the current clinical indicators.
+Our unsupervised mathematical frameworks enabled us to find patterns of CNAs in ovarian cancer that are exclusive to tumor tissue compared with normal, are independent of the microarray used to measure the data (platform bias), and separate the patient set into two groups with significantly different survival times. This resulted in a genomic-based prognostic indicator for ovarian cancer that outperforms and is independent of the current clinical indicators.
 
 ## Interests
 As my current research indicates, I am interested in approaching biomedical problems from a rigorous scientific standpoint. I believe that the key to closing the many gaps in our knowledge of biology and medicine will come from applying logic and methodology from other sciences and engineering. With our modern ability to collect large-scale data from biological systems, I think key advancements will come from machine learning methods and discovery from data. My primary interest is in continuing to push our ability to make discoveries from data and applying these methods to issues at the forefront of modern human needs.
