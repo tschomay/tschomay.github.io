@@ -1,6 +1,6 @@
 ---
 layout: page
-title : Blog
+title : Ted Schomay's Blog
 ---
 
 <ul>

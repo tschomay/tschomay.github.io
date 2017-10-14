@@ -24,15 +24,15 @@
       <div id="banner">
         
 
-        <a href="http://www.linkedin.com/in/tschomay" class="button fork"><strong>LinkedIn</strong></a>
-        <!--
+        <a href="http://www.linkedin.com/in/tschomay" class="button fork" target="_blank"><strong>LinkedIn</strong></a>
         <div class="downloads">
           <ul>
-            <li><a href="http://www.tschomay.com" class="button">Home</a></li>
-            <li><a href="blog" class="button">Blog</a></li>
+            <li><a href="/" class="button">Home</a></li>
+            <li><a href="/research" class="button">Research</a></li>
+            <li><a href="/about" class="button">About Me</a></li>
+            <li><a href="/blog" class="button">Blog</a></li>
           </ul>
         </div>
-        -->
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -54,9 +54,9 @@
       </section>
       <footer>
         {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+          <p>Project maintained by <a href="{{ site.github.owner_url }}" target="_blank">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham" target="_blank">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
