@@ -7,9 +7,10 @@ title: About Ted Schomay
 <img align="right" src="/assets/images/Ted_Hiking.jpg" height="393" width="246" style="padding:10px;">
 
 [Download my resume.](/assets/Ted Schomay Resume.pdf){:target="_blank"}  
-<p align="justify">
+<!-- <p align="justify">
 I am planning to defend my PhD dissertation soon and am looking for opportunities in data science or computational biology. Let's talk if you have interesting and challenging problems that can be solved by advanced discovery from data.
 </p>
+-->
 
 ## Interests
 <p align="justify">
