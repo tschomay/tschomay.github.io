@@ -11,3 +11,6 @@ Hello! My name is Ted Schomay and I am a PhD student in Bioengineering at the Un
 ## Contact
 tschomay [at] gmail [dot] com  
 [Download resume](/assets/Ted Schomay Resume.pdf){:target="_blank"}
+
+### Links
+[Home](/) | [Research](/research) | [About Me](/about) | [Blog](/blog)

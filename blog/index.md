@@ -13,3 +13,6 @@ title : Ted Schomay's Blog
 
 
 
+### Links
+[Home](/) | [Research](/research) | [About Me](/about) | [Blog](/blog)
+
