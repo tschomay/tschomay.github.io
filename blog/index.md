@@ -2,6 +2,7 @@
 layout: page
 title : Ted Schomay's Blog
 ---
+### Posts
 
 <ul>
   {% for post in site.posts %}

@@ -7,19 +7,19 @@ title: About Ted Schomay
 <img align="right" src="/assets/images/Ted_Hiking.jpg" height="393" width="246" style="padding:10px;">
 
 [Download my resume.](/assets/Ted Schomay Resume.pdf){:target="_blank"}  
-<!-- <p align="justify">
-I am planning to defend my PhD dissertation soon and am looking for opportunities in data science or computational biology. Let's talk if you have interesting and challenging problems that can be solved by advanced discovery from data.
-</p>
--->
 
 ## Interests
 <p align="justify">
-As my current research indicates, I am interested in approaching biomedical problems from a rigorous scientific standpoint. I believe that the key to closing the many gaps in our knowledge of biology and medicine will come from applying logic and methodology from other sciences and engineering. With our modern ability to collect large-scale data from biological systems, I think key advancements will come from machine learning methods and discovery from data. My primary interest is in continuing to push our ability to make discoveries from data and applying these methods to issues at the forefront of modern human needs.
+As my PhD research indicates, I am interested in approaching biomedical problems from a rigorous scientific standpoint. I believe that the key to closing the many gaps in our knowledge of biology and medicine will come from application of logic and methodology that stems from other sciences and engineering. With our modern ability to collect large-scale data from biological systems, I think key advancements will come from machine learning methods and discovery from data. My primary interest is in continuing to push our ability to make discoveries from data and applying these methods to issues at the forefront of modern human needs.
+</p>
+
+<p align="justify">
+Let's talk if you have interesting and challenging problems that can be solved by advanced discovery from data.
 </p>
 
 ## Hobbies
 <p align="justify">
-When I'm not playing with machine learning and data science, my hobbies include outdoor activities (biking, hiking, climbing, skiing, running, ...), remote control cars and helicopters (check out <a href="http://freestylexmods.com/" target="_blank">www.FreestyleXmods.com</a> for some things I did 10 years ago!), and board games.
+When I'm not playing with machine learning and data science, my hobbies include outdoor activities (biking, hiking, climbing, skiing, running, ...), remote control cars and helicopters (check out <a href="http://freestylexmods.com/" target="_blank">www.FreestyleXmods.com</a> for some things I did 10+ years ago!), and board games.
 </p>
 
 
