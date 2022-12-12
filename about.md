@@ -33,8 +33,6 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
 
 [LinkedIn](https://www.linkedin.com/in/tschomay){:target="_blank"}
 
-[Gitlab](https://github.com/tschomay){:target="_blank"} 
-
 ## Interests
 <p align="justify">
 As my PhD research indicates, I am interested in approaching biomedical problems from a rigorous scientific standpoint. I believe that the key to closing the many gaps in our knowledge of biology and medicine will come from application of logic and methodology that stems from other sciences and engineering. With our modern ability to collect large-scale data from biological systems, I think key advancements will come from machine learning methods and discovery from data. My primary interest is in continuing to push our ability to make discoveries from data and applying these methods to issues at the forefront of modern human needs.
