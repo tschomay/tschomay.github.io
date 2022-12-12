@@ -27,5 +27,5 @@ DNA copy-number aberrations (CNAs) are a well-known hallmark of cancer. However,
 The new unsupervised mathematical frameworks enabled us to find patterns of CNAs in ovarian cancer that are exclusive to tumor tissue compared with normal, are independent of the microarray used to measure the data (platform bias), and separate the patient set into two groups with significantly different survival times. This resulted in a genomic-based prognostic indicator for ovarian cancer that outperforms and is independent of the current clinical indicators.
 </p>
 
-### Links
+### Site Nav
 [Home](/) | [Research](/research) | [About Me](/about) | [Blog](/blog)

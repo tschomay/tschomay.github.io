@@ -5,6 +5,7 @@ title: About Ted Schomay
 
 ## Contact
 <img align="right" src="/assets/images/Ted_Hiking.jpg" height="393" width="246" style="padding:10px;">
+
 <script type="text/javascript" language="javascript">
 <!--
 // Email obfuscator script 2.1 by Tim Williams, University of Arizona
@@ -56,5 +57,5 @@ P. Sankaranarayanan,* <b>T. E. Schomay</b>,* K. A. Aiello, and O. Alter, "Tensor
 L. A. Portelli, <b>T. E. Schomay</b>, and F. S. Barnes, "Inhomogeneous Background Magnetic Field in Biological Incubators is a Potential Confounder for Experimental Variability and Reproducibility. <i>Bioelectromagnetics</i> 34 (5), 337-348. (July 2013)
 </p>
 
-### Links
+### Site Nav
 [Home](/) | [Research](/research) | [About Me](/about) | [Blog](/blog)
