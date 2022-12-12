@@ -30,7 +30,9 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
 }
 //-->
 </script><noscript>Sorry, my email link relies on Javascript to reduce bots. Try LinkedIn instead.</noscript>
+
 [LinkedIn](https://www.linkedin.com/in/tschomay){:target="_blank"}
+
 [Gitlab](https://github.com/tschomay){:target="_blank"} 
 
 ## Interests
