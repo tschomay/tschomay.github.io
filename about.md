@@ -3,10 +3,34 @@ layout: page
 title: About Ted Schomay
 ---
 
-## CV/Resume
+## Contact
 <img align="right" src="/assets/images/Ted_Hiking.jpg" height="393" width="246" style="padding:10px;">
-
-[Download my resume.](/assets/Ted Schomay Resume.pdf){:target="_blank"}  
+<script type="text/javascript" language="javascript">
+<!--
+// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+// Random encryption key feature coded by Andrew Moulden
+// This code is freeware provided these four comment lines remain intact
+// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+{ coded = "mSRB1hgF@lhg7c.R1h"
+  key = "F2xTsatiew0b16qRNpnM4USgm7JEXLDPGAzKWk5Y3lhOyZ98IdVjQfuroCHcBv"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+}
+//-->
+</script><noscript>Sorry, my email link relies on Javascript to reduce bots. Try LinkedIn instead.</noscript>
+[LinkedIn](https://www.linkedin.com/in/tschomay){:target="_blank"}
+[Gitlab](https://github.com/tschomay){:target="_blank"} 
 
 ## Interests
 <p align="justify">
@@ -19,7 +43,7 @@ Let's talk if you have interesting and challenging problems that can be solved b
 
 ## Hobbies
 <p align="justify">
-When I'm not playing with machine learning and data science, my hobbies include outdoor activities (biking, hiking, climbing, skiing, running, ...), remote control cars and helicopters (check out <a href="http://freestylexmods.com/" target="_blank">www.FreestyleXmods.com</a> for some things I did 10+ years ago!), and board games.
+My hobbies include outdoor many activities (climbing, biking, hiking,  skiing, running, etc.), remote control cars and helicopters, and board games.
 </p>
 
 

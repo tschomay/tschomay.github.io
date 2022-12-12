@@ -4,7 +4,9 @@ title: Ted Schomay's Research
 ---
 
 ## Research
-My research lies at the intersection of math and computational biology.
+<p align="justify">
+My research interests have sat at the intersection of math and computational biology. My PhD research involved developing mathematical frameworks to find patterns in big datasets. I used these methods to analyze genome-scale profiles of cancer patients in search of better prognostic tests. 
+</p>
 
 #### Mathematics
 <p align="justify">
