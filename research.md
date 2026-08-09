@@ -5,6 +5,10 @@ title: Ted Schomay's Research
 
 ## Research
 <p align="justify">
+<i>This is the technical deep dive behind the short version on my <a href="/about">About</a> page — the math and biology of my PhD work, for anyone who wants the details.</i>
+</p>
+
+<p align="justify">
 My research interests have sat at the intersection of math and computational biology. My PhD research involved developing mathematical frameworks to find patterns in big datasets. I used these methods to analyze genome-scale profiles of cancer patients in search of better prognostic tests. 
 </p>
 
@@ -26,6 +30,3 @@ DNA copy-number aberrations (CNAs) are a well-known hallmark of cancer. However,
 <p align="justify">
 The new unsupervised mathematical frameworks enabled us to find patterns of CNAs in ovarian cancer that are exclusive to tumor tissue compared with normal, are independent of the microarray used to measure the data (platform bias), and separate the patient set into two groups with significantly different survival times. This resulted in a genomic-based prognostic indicator for ovarian cancer that outperforms and is independent of the current clinical indicators.
 </p>
-
-### Site Nav
-[Home](/) | [Research](/research) | [About Me](/about) | [Blog](/blog)
