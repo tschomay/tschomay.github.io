@@ -5,7 +5,7 @@ layout: default
 ## Welcome
 <img align="right" src="/assets/images/Ted2.jpg" height="180" width="180" style="padding:10px;">
 <p align="justify">
-I'm a Senior Data Scientist, but the technical answer has rarely been the hard part of my job. The hard part is connecting that answer to what the business actually needs, and doing it in a way that makes people want to keep working with you. <i>What</i> you do is only part of the picture — it's <i>how</i> you do it that has the bigger impact.
+I'm a Principal Data Scientist, but the technical answer has rarely been the hard part of my job. The hard part is connecting that answer to what the business actually needs, and doing it in a way that makes people want to keep working with you. <i>What</i> you do is only part of the picture — it's <i>how</i> you do it that has the bigger impact.
 </p>
 
 <p align="justify">
