@@ -88,6 +88,64 @@ third register, more teaching-oriented, not yet defined by an example. Use
 judgment if one comes up; probably closer to mode 2 than mode 1, but check
 in if unsure.
 
+### The "Philosophy" category
+
+A third register, distinct from modes 1 and 2 above: posts that are
+explicitly about the "how matters more than what" thesis itself, told
+through a specific story Ted led (not a project he built solo). First one
+is `_posts/2026-08-14-documentation-quest.md`. These use `topic: Philosophy`
+in the front matter, which surfaces next to the date on `/blog` and the
+homepage's recent-notes list (see `_layouts/post.html` and `blog/index.md`
+— it's a plain string field, not a Jekyll categories/tags collection; don't
+build out a full category-archive system for this, the site is small and
+doesn't need one).
+
+**Use `topic:`, not `category:`, for this field.** Jekyll treats `category`/
+`categories` in post front matter as a reserved key that feeds the default
+permalink (`/:categories/:year/:month/:day/:title`), so a post with
+`category: Philosophy` silently gets a URL like
+`/philosophy/2026/08/14/...` instead of the flat `/2026/08/14/...` every
+other post uses. Confirmed by building locally — don't reintroduce
+`category:` without also deciding you want that URL-structure change on
+purpose.
+
+The sharpest version of the thesis, distilled from the documentation-quest
+story: **"how" is what turns a task people have to do into one they want to
+be part of — the test isn't whether the work got done, it's whether people
+who didn't have to be there started asking to join.** Use that as the bar
+for whether a candidate story actually belongs in this category — it should
+have a concrete signal like that (people opting in, culture visibly
+shifting), not just "I did a project well and people liked it."
+
+### Ted's other recurring type of work: rescuing failed analytical products
+
+Ted has mentioned, as context for future agents rather than as something to
+publish verbatim: a recurring pattern in the work he's drawn to is being
+brought into analytical/ML products that have already shipped and are
+failing in some way that isn't visible from outside — e.g. a proof-of-concept
+released as a real product with every customer on a diverged version and no
+scalable process behind it, or a legacy product so layered with departed
+people's work that it quietly stopped delivering its core output without
+anyone realizing. The technical fix (the ML/analytics piece) is often not
+the hard part; the hard part is restructuring everything around it — process,
+scope, stakeholder visibility — while keeping deliveries running and without
+alarming clients that major changes are underway.
+
+Ted was explicit: **don't put the specific case-study details of these
+projects on the site** (employers, clients, the exact failure modes aren't
+his to publish). Keep it to the essence — that his "what" isn't just ML
+engineering or analytics, it's finding the gap nobody's named yet, bringing
+thought leadership to it, and connecting the technical detail back to the
+business need — the same connective work the site's core thesis is already
+about.
+
+This has since been worked into the homepage: the Welcome section's second
+paragraph ("The work I'm proudest of, though, is usually the rescue...")
+now carries this, at Ted's explicit request (Aug 2026). Still no
+case-study specifics there — keep it that way. If asked to add more, resist
+naming employers/clients/products; add color to the *essence* (gap-finding,
+thought leadership, technical-to-business connection) instead.
+
 Voice notes, regardless of mode:
 - First person, honest, a little self-deprecating when true ("the
   implementation isn't doing anything special" is a real line from the
