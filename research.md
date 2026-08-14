@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Ted Schomay's Research
+eyebrow: Research
 ---
 
-## Research
 <p align="justify">
 <i>This is the technical deep dive behind the short version on my <a href="/about">About</a> page — the math and biology of my PhD work, for anyone who wants the details.</i>
 </p>
