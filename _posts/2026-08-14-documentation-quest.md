@@ -13,7 +13,7 @@ That's the "what." It's a fine story on its own — the project worked, the docs
 </p>
 
 <p align="justify">
-What made it land was how we did it. On the technical side, I broke the product into pipeline-sized chunks and built a repeatable way to learn, crystallize, and document one fast — fast enough that at points we were each clearing a full pipeline a day, on systems that had resisted understanding for years. But the bigger shift was the frame around the work: we became adventurers on a quest. 8-bit avatars. Pipelines as levels on a dungeon-themed progress tracker. Badges for milestones, categories to compete in, a space just for the weird and surprising things we dug up, and a daily share-out of what we'd learned.
+What made it land was how we did it. On the technical side, I broke the product into pipeline-sized chunks and built a repeatable way to learn, crystallize, and document one fast — fast enough that at points we were each clearing a full pipeline a day, on systems that had resisted understanding for years. But the bigger shift was the frame around the work: we became adventurers on a quest. <img src="/assets/images/ted-8bit-avatar.png" alt="Ted's 8-bit avatar for the documentation quest, a torch-and-sword-wielding adventurer" style="width:60px; height:60px; vertical-align:middle; margin:0 0.25em;">8-bit avatars. Pipelines as levels on a dungeon-themed progress tracker. Badges for milestones, categories to compete in, a space just for the weird and surprising things we dug up, and a daily share-out of what we'd learned.
 </p>
 
 <p align="justify">

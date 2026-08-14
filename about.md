@@ -15,7 +15,6 @@ My PhD research sat at the intersection of math and computational biology: devel
 
 <figure class="portrait-figure">
 <img src="/assets/images/Ted_Hiking.jpg" alt="Ted Schomay hiking" class="notch" style="filter:url(#duotone);">
-<figcaption>Ted_Hiking.jpg, duotone-treated</figcaption>
 </figure>
 </div>
 
