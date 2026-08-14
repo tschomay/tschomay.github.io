@@ -9,7 +9,7 @@ I'm a Principal Data Scientist, but the technical answer has rarely been the har
 </p>
 
 <p align="justify">
-I work across biomedical research, credit, and marketing technology, building models and products from early concept through to production, and occasionally rescuing ones that were floundering. Thanks for checking out my page — have a look around, or reach out if you'd like to talk more.
+I work across biomedical research, credit, and marketing technology, building models and products from early concept through to production. The work I'm proudest of, though, is usually the rescue — stepping into a product that's already shipped and quietly not delivering, finding the gap nobody's named yet, and reconnecting the technical fix to what the business actually needed from it in the first place. Thanks for checking out my page — have a look around, or reach out if you'd like to talk more.
 </p>
 
 ## What I'm looking for and where I do my best

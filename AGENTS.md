@@ -133,14 +133,18 @@ alarming clients that major changes are underway.
 
 Ted was explicit: **don't put the specific case-study details of these
 projects on the site** (employers, clients, the exact failure modes aren't
-his to publish). If this ever becomes a post or a page section, it should
-capture the essence only — that his "what" isn't just ML engineering or
-analytics, it's finding the gap nobody's named yet, bringing thought
-leadership to it, and connecting the technical detail back to the business
-need — the same connective work the site's core thesis is already about.
-The homepage's "occasionally rescuing ones that were floundering" line is
-the current, appropriately light touch on this; don't expand it into
-something more detailed without Ted asking first.
+his to publish). Keep it to the essence — that his "what" isn't just ML
+engineering or analytics, it's finding the gap nobody's named yet, bringing
+thought leadership to it, and connecting the technical detail back to the
+business need — the same connective work the site's core thesis is already
+about.
+
+This has since been worked into the homepage: the Welcome section's second
+paragraph ("The work I'm proudest of, though, is usually the rescue...")
+now carries this, at Ted's explicit request (Aug 2026). Still no
+case-study specifics there — keep it that way. If asked to add more, resist
+naming employers/clients/products; add color to the *essence* (gap-finding,
+thought leadership, technical-to-business connection) instead.
 
 Voice notes, regardless of mode:
 - First person, honest, a little self-deprecating when true ("the
