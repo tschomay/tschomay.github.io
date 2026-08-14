@@ -21,7 +21,7 @@ What made it land was how we did it. On the technical side, I broke the product 
 </p>
 
 <p align="justify">
-8-bit avatars. Pipelines as levels on a dungeon-themed progress tracker. Badges for milestones, categories to compete in, a space just for the weird and surprising things we dug up, and a daily share-out of what we'd learned.
+Pixel art avatars. Pipelines as levels on a dungeon-themed progress tracker. Badges for milestones, categories to compete in, a space just for the weird and surprising things we dug up, and a daily share-out of what we'd learned.
 </p>
 
 <p align="justify">
