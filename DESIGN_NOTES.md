@@ -35,7 +35,8 @@ code was touched — if you need to see the original pitch, ask Ted for the link
   shadows to ink and highlights to the brass signal color. Applied to `Ted2.jpg`
   (home hero) and `Ted_Hiking.jpg` (about) to unify the older photos into the
   palette. Notes post photos (Auralux) are deliberately left full color — that
-  post is about the glow, so the treatment gets out of its way there.
+  post is about the glow, so the treatment gets out of its way there. See "How
+  the duotone treatment works" below before adding it to a new photo.
 - **Layouts**: `_layouts/home.html` (hero + content, used by `index.md`),
   `_layouts/page.html` (generic — About, Research, Notes index),
   `_layouts/post.html`. All extend `_layouts/default.html`, which owns the
@@ -43,6 +44,77 @@ code was touched — if you need to see the original pitch, ask Ted for the link
 - **Notes list**: home shows a compact `.notes-list`; `/blog` shows fuller
   `.note-cards` with a one-line excerpt pulled from each post's Jekyll-generated
   `excerpt` (no hand-duplicated summary text to keep in sync).
+
+## How the duotone treatment works
+
+Important: this is a **live CSS/SVG filter applied in the browser**, not a
+pre-edited image file. There is no image-processing step and no separate
+"duotone version" of any photo saved to disk — the original JPG/PNG stays
+untouched in `assets/images/`, and the browser recolors it on the fly. Adding
+the treatment to a new photo is a one-line HTML change, not an image edit.
+
+The filter is defined once, near the top of `_layouts/default.html`, as a
+hidden inline `<svg>` (so it doesn't need a request to a separate file, and
+`filter:url(#duotone)` can reference it from any page):
+
+```html
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="duotone" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0 0 0 1 0"/>
+    <feComponentTransfer>
+      <feFuncR type="table" tableValues="0.086 0.851"/>
+      <feFuncG type="table" tableValues="0.129 0.573"/>
+      <feFuncB type="table" tableValues="0.114 0.255"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+```
+
+Two steps happen:
+
+1. **`feColorMatrix`** flattens the photo to grayscale using standard luminance
+   weights (0.299R + 0.587G + 0.114B). This is generic — it never needs to
+   change regardless of what colors you're mapping to.
+2. **`feComponentTransfer`** with `type="table"` remaps that grayscale value
+   per channel. Each `tableValues="A B"` linearly interpolates: black pixels
+   (0.0) become `A`, white pixels (1.0) become `B`, everything in between
+   blends. So `feFuncR`/`feFuncG`/`feFuncB` together define **two colors**:
+   the shadow color (all three `A` values) and the highlight color (all three
+   `B` values). Here that's ink `#16211D` for shadows → brass `#D9A441` for
+   highlights (a slightly warmer, more saturated brass than the `--signal`
+   CSS token, chosen because a photo highlight wants more pop than
+   text-safe accent color does).
+
+**To apply it to a new photo**, just add the filter (and, to match the rest of
+the site's portrait framing, the `.notch` class) to the `<img>` tag:
+
+```html
+<img src="/assets/images/whatever.jpg" alt="..." class="notch" style="filter:url(#duotone);">
+```
+
+No new markup, no new filter definition needed — reuse the existing
+`#duotone` filter for any personal/portrait photo. Leave project or
+screenshot images (like the Auralux photos in Notes posts) untouched — the
+full-color-vs-duotone contrast between "Ted" photos and "project" photos is a
+deliberate rule (see above), not an oversight.
+
+**If the ink/brass hex values ever change** (e.g. the palette tokens in
+`style.css` get revised), the `tableValues` above will need recomputing by
+hand — SVG filter primitives can't read CSS custom properties, so nothing
+here updates automatically when `:root` does. The recipe, given any shadow
+hex and highlight hex:
+
+1. Split each hex into R, G, B (0–255).
+2. Divide each channel by 255 to get a 0–1 fraction (three decimals is
+   plenty of precision).
+3. `feFuncR tableValues="<shadow R> <highlight R>"`, and the same pattern for
+   G and B.
+
+Worked example for the values above: ink `#16211D` = rgb(22, 33, 29) →
+0.086, 0.129, 0.114. Brass `#D9A441` = rgb(217, 146, 65) → 0.851, 0.573,
+0.255. `color-interpolation-filters="sRGB"` on the `<filter>` is what makes
+this direct hex-to-fraction math valid — without it, browsers default to
+linearRGB and the numbers would need gamma correction first.
 
 ## Still open
 
