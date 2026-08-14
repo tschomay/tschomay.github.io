@@ -24,7 +24,7 @@ I care as much about the team around the work as the work itself. I've sought ou
 ## Recent notes
 <ul>
 {% for post in site.posts limit: 3 %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> <small>— {{ post.date | date: "%b %-d, %Y" }}</small></li>
+  <li><a href="{{ post.url }}">{{ post.title }}</a> <small>— {{ post.date | date: "%b %-d, %Y" }}{% if post.topic %} · {{ post.topic }}{% endif %}</small></li>
 {% endfor %}
 </ul>
 [See all notes →](/blog)

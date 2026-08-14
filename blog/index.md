@@ -10,7 +10,7 @@ Short write-ups on projects I'm working on — less "here's what I built," more 
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
+      <a href="{{ post.url }}">{{ post.title }}</a> <small>— {{ post.date | date: "%b %-d, %Y" }}{% if post.topic %} · {{ post.topic }}{% endif %}</small>
     </li>
   {% endfor %}
 </ul>
