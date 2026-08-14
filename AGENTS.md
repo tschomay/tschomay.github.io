@@ -40,10 +40,14 @@ him.
 - **Notes pulls itself.** The homepage's "Recent notes" section and the
   `/blog` index both loop over `site.posts` via Liquid — publishing a new
   post is enough, nothing else needs manual updating.
-- **Visual design is intentionally deferred**, not neglected. See
-  `DESIGN_NOTES.md` for what's queued (theme swap, mobile check, stale
-  photos). Don't take on a design pass unless asked — the priority was
-  fixing what the site *says* before what it *looks like*.
+- **Visual design got its pass in Aug 2026.** The site runs a custom system
+  ("Signal & Noise" — built from Ted's own SVD/signal-extraction research as the
+  visual metaphor, not a generic theme) instead of `jekyll-theme-leap-day`. See
+  `DESIGN_NOTES.md` for the rationale, what's implemented, and the one thing
+  still open (photo currency). The palette, type pairing, the notch motif, and
+  the hero animation were deliberate choices approved by Ted — don't restyle
+  incidentally while doing something else. If a future ask wants a different
+  direction, treat it as its own design pass.
 
 ## Writing Notes posts
 

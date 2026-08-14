@@ -1,11 +1,14 @@
 ---
-layout: default
+layout: home
+title: Ted Schomay
+role: Principal Data Scientist
+thesis: What you do is only part of the picture — it's how you do it that has the bigger impact.
+portrait: /assets/images/Ted2.jpg
 ---
 
 ## Welcome
-<img align="right" src="/assets/images/Ted2.jpg" height="180" width="180" style="padding:10px;">
 <p align="justify">
-I'm a Principal Data Scientist, but the technical answer has rarely been the hard part of my job. The hard part is connecting that answer to what the business actually needs, and doing it in a way that makes people want to keep working with you. <i>What</i> you do is only part of the picture — it's <i>how</i> you do it that has the bigger impact.
+I'm a Principal Data Scientist, but the technical answer has rarely been the hard part of my job. The hard part is connecting that answer to what the business actually needs, and doing it in a way that makes people want to keep working with you.
 </p>
 
 <p align="justify">
@@ -22,21 +25,27 @@ I care as much about the team around the work as the work itself. I've sought ou
 </p>
 
 ## Recent notes
-<ul>
+<ul class="notes-list">
 {% for post in site.posts limit: 3 %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> <small>— {{ post.date | date: "%b %-d, %Y" }}{% if post.topic %} · {{ post.topic }}{% endif %}</small></li>
+  <li>
+    <span class="d">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="t"><a href="{{ post.url }}">{{ post.title }}</a></span>
+    <span>{% if post.topic %}<span class="tag">{{ post.topic }}</span>{% endif %}</span>
+  </li>
 {% endfor %}
 </ul>
-[See all notes →](/blog)
+<p><a href="/blog" class="btn">See all notes →</a></p>
 
 ## Contact
+<div class="contact-row">
 <span id="email"></span>
+<a href="https://www.linkedin.com/in/tschomay" target="_blank" rel="noopener" class="btn">LinkedIn ↗</a>
+</div>
 <script type="text/javascript">
 (function(){
   var user = "tschomay", domain = "gmail.com";
   var addr = user + "@" + domain;
-  document.getElementById("email").innerHTML = "<a href='mailto:" + addr + "'>" + addr + "</a>";
+  document.getElementById("email").innerHTML = "<a href='mailto:" + addr + "' class='btn solid'>" + addr + "</a>";
 })();
-</script><noscript>Email link requires Javascript. Message me on LinkedIn instead.</noscript>
-
-[LinkedIn](https://www.linkedin.com/in/tschomay){:target="_blank"}
+</script>
+<noscript>Email link requires Javascript. Message me on LinkedIn instead.</noscript>

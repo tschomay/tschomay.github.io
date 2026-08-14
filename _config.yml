@@ -1,6 +1,7 @@
-theme: jekyll-theme-leap-day
 title: Ted Schomay's Homepage
 description: This page is about me and some of the projects I work on. Have a look around!
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag

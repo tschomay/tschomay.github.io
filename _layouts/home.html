@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<header class="hero">
+  <canvas id="wave" width="1200" height="420" aria-hidden="true"></canvas>
+  <div class="inner">
+    <div>
+      <div class="eyebrow">{{ page.role | default: "Principal Data Scientist" }}</div>
+      <h1>{{ page.title | default: site.author | default: "Ted Schomay" }}</h1>
+      {% if page.thesis %}<p class="pull">&ldquo;{{ page.thesis }}&rdquo;</p>{% endif %}
+    </div>
+    <figure class="portrait-figure">
+      <img src="{{ page.portrait | default: '/assets/images/Ted2.jpg' | relative_url }}" alt="Portrait of Ted Schomay" class="notch" style="filter:url(#duotone);">
+    </figure>
+  </div>
+</header>
+
+<div class="wrap-wide">
+  <div class="page-content">
+    {{ content }}
+  </div>
+</div>
