@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Every wave is just a pile of sine waves. Try it."
+title: "Every signal is just a pile of sine waves. Try it."
 ---
 
 <link rel="stylesheet" href="/assets/css/fourier.css">
 
-Fourier decomposition is one of those ideas I understood on paper for years before I actually *got* it, and what finally did it wasn't another derivation — it was messing around until the answer felt obvious. So instead of explaining it, this post hands you the knobs. Three steps, no math required, though the math is sitting right underneath if you want it.
+Fourier decomposition is one of those concepts you can study for years and still not have it click until you try it visually. So instead of explaining it, this post hands you the knobs. Four steps, no math required, though the math is sitting right underneath if you want it.
 
 ## 1. Meet one sine wave
 
@@ -65,6 +65,30 @@ You don't have to find the recipe by hand, though. The Fourier transform reads i
 
 A few things worth noticing while you play: smooth shapes (try the triangle) are basically done after a handful of waves, while anything with a sharp jump needs a long tail of them. And no matter how many you add to the square, the rebuild overshoots a little at every corner — that's the Gibbs phenomenon, and it never fully goes away.
 
-That last observation is also why this matters outside a math class. Most of the "shape" of a real signal usually lives in a few big bars, and the long tail of tiny ones is mostly noise. Keep the big ones, drop the rest, and you've just compressed an audio file, cleaned up a sensor reading, or — same idea, different basis — done the [SVD signal extraction](/2017/10/09/SVD_Introduction.html) from my first post here.
+## 4. Use it on a real problem
+
+Here's where this stops being a party trick. Say you're chasing noise in a measurement rig, so you power everything down to see what the baseline looks like — and the scope is still showing *this*. Nothing's running. Where is it coming from?
+
+<div class="fx" data-fx="scope">
+  <p class="eyebrow">Step 4 · The scope with the power off</p>
+  <canvas class="fx-plot" role="img" aria-label="A noisy oscilloscope trace recorded with the system powered off"></canvas>
+  <p class="fx-legend">0.1 s of the trace · <b class="fx-rms"></b></p>
+  <div class="fx-bar">
+    <button type="button" class="btn solid" data-act="fourier">Run Fourier</button>
+  </div>
+  <div class="fx-reveal" hidden>
+    <canvas class="fx-scope-spec" role="img" aria-label="Spectrum of the trace, with peaks at 60 hertz and its odd multiples"></canvas>
+    <p class="fx-legend">frequency, 0–1000 Hz · tap a peak to filter it out</p>
+    <p class="fx-note" aria-live="polite"></p>
+    <div class="fx-bar">
+      <button type="button" class="btn" data-act="hum">Remove 60 Hz + harmonics</button>
+      <button type="button" class="btn" data-act="restore">Put them back</button>
+    </div>
+  </div>
+</div>
+
+In the time trace it's fuzz with maybe a hint of a wobble. In the spectrum it's a confession: a tall spike at exactly 60 Hz, smaller ones at 180, 300, 420 — odd multiples of 60 — and a low, flat carpet of everything else. Nothing in your experiment runs at 60 Hz, but the wall outlet does. That's line noise: the building's wiring is coupling into your setup, which almost always means something isn't grounded or shielded the way you thought it was. (In most of the world outside North America you'd see the same picture at 50 Hz.)
+
+Filtering those peaks out, like you just did, is the band-aid. The real fix is a ground strap or a shielded cable — but you wouldn't have known which problem you had without looking at the recipe instead of the shape. That's the whole trick, here and in the [SVD signal extraction](/2017/10/09/SVD_Introduction.html) from my first post: most of a real signal lives in a few big bars, and once you can see them, you can decide which ones belong there.
 
 <script src="/assets/js/fourier.js" defer></script>

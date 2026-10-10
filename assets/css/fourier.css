@@ -14,6 +14,8 @@
 .fx-plot { height: clamp(150px, 28vw, 220px); }
 .fx-pad { height: clamp(180px, 34vw, 260px); touch-action: none; user-select: none; -webkit-user-select: none; cursor: crosshair; border: 1px dashed var(--line); }
 .fx-spec { height: 64px; margin-top: 0.6rem; }
+.fx-scope-spec { height: clamp(120px, 20vw, 160px); margin-top: 0.9rem; cursor: pointer; }
+.fx-reveal[hidden], .fx-bar[hidden] { display: none; }
 
 .fx-eq {
   font-family: var(--font-mono);
