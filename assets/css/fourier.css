@@ -1,0 +1,62 @@
+/* Interactive widgets for the Fourier notes post — see assets/js/fourier.js. */
+
+.fx {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  margin: 1.6rem 0 2.2rem;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+}
+.fx .eyebrow { margin: 0 0 0.75rem; }
+.fx canvas { width: 100%; display: block; }
+.fx-plot { height: clamp(150px, 28vw, 220px); }
+.fx-pad { height: clamp(180px, 34vw, 260px); touch-action: none; user-select: none; -webkit-user-select: none; cursor: crosshair; border: 1px dashed var(--line); }
+.fx-spec { height: 64px; margin-top: 0.6rem; }
+
+.fx-eq {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--signal-text);
+  margin: 0.6rem 0 0.4rem;
+}
+
+.fx-row {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr 3.4rem;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.15rem 0;
+}
+.fx-k, .fx-v, .fx-row output {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.fx-v, .fx-row output { text-align: right; }
+.fx input[type="range"] { width: 100%; accent-color: var(--signal); margin: 0.35rem 0; }
+
+.fx-harmonics { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem; margin-top: 0.8rem; }
+.fx-harmonics .fx-row { grid-template-columns: 2rem 1fr 3rem; }
+@media (max-width: 560px) { .fx-harmonics { grid-template-columns: 1fr; } }
+
+.fx-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 0.9rem;
+  margin-top: 0.9rem;
+}
+.fx-bar .btn { padding: 0.45rem 0.8rem; cursor: pointer; font-size: 0.68rem; }
+.fx-bar label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); display: inline-flex; gap: 0.4rem; align-items: center; }
+
+.fx-meter { flex: 1 1 140px; height: 6px; background: var(--line); position: relative; }
+.fx-meter span { position: absolute; inset: 0 auto 0 0; background: var(--signal); transition: width 0.15s; }
+.fx-score { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink); }
+.fx-note { font-family: var(--font-body); font-style: italic; color: var(--ink-soft); margin: 0.7rem 0 0; min-height: 1.6em; }
+
+.fx-legend { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); margin: 0.5rem 0 0; }
+.fx-legend b { font-weight: 600; color: var(--signal-text); }
+
+@media (prefers-reduced-motion: reduce) { .fx-meter span { transition: none; } }
