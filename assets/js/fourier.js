@@ -387,11 +387,42 @@
     return draw;
   }
 
+  // Every slider: double-tap (or double-click) resets it to its starting value,
+  // and while dragging, fine-grained sliders snap to that value when close.
+  function homeable(input) {
+    const home = +input.defaultValue;
+    const min = +input.min, max = +input.max, step = +input.step || 1;
+    const fine = (max - min) / step >= 100;
+    const snap = 0.03 * (max - min);
+    let dragging = false, lastDown = -Infinity, resetOnUp = false;
+    const set = (v) => { input.value = v; input.dispatchEvent(new Event("input", { bubbles: true })); };
+    input.addEventListener("pointerdown", (e) => {
+      dragging = true;
+      resetOnUp = e.timeStamp - lastDown < 350;
+      lastDown = e.timeStamp;
+    });
+    const up = () => {
+      if (!dragging) return;
+      dragging = false;
+      // Wait a tick so the browser's own thumb move lands first, then override it.
+      if (resetOnUp) setTimeout(() => set(home), 0);
+      resetOnUp = false;
+    };
+    window.addEventListener("pointerup", up);
+    window.addEventListener("pointercancel", up);
+    // Snap only while dragging, so arrow keys can still step away from home.
+    input.addEventListener("input", (e) => {
+      if (!dragging || !fine || !e.isTrusted) return;
+      if (+input.value !== home && Math.abs(+input.value - home) < snap) set(home);
+    });
+  }
+
   const kinds = { one, square, draw: drawAnything, scope };
   const redraws = [];
   document.querySelectorAll(".fx[data-fx]").forEach((el) => {
     const make = kinds[el.dataset.fx];
     if (make) { const r = make(el); redraws.push(r); r(); }
+    el.querySelectorAll('input[type="range"]').forEach(homeable);
   });
   let pending = 0;
   const all = () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(() => redraws.forEach((r) => r())); };

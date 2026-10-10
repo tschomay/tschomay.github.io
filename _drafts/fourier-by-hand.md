@@ -18,6 +18,7 @@ Everything here is built out of one ingredient. A sine wave has three dials: how
   <label class="fx-row"><span class="fx-k">Amplitude</span><input type="range" name="amp" min="0" max="1" step="0.01" value="0.8"><output for="amp"></output></label>
   <label class="fx-row"><span class="fx-k">Frequency</span><input type="range" name="freq" min="1" max="8" step="1" value="1"><output for="freq"></output></label>
   <label class="fx-row"><span class="fx-k">Phase</span><input type="range" name="phase" min="0" max="6.2832" step="0.01" value="0"><output for="phase"></output></label>
+  <p class="fx-legend">tip: double-tap any slider to put it back</p>
 </div>
 
 ## 2. Now build a square wave out of them
@@ -67,7 +68,7 @@ A few things worth noticing while you play: smooth shapes (try the triangle) are
 
 ## 4. Use it on a real problem
 
-Here's where this stops being a party trick. Say you're chasing noise in a measurement rig, so you power everything down to see what the baseline looks like — and the scope is still showing *this*. Nothing's running. Where is it coming from?
+Here's where this stops being a party trick, and it's something I've run into more than once while tinkering. You're chasing noise in a setup, so you power everything down to see what the baseline looks like — and the scope is still showing *this*. Nothing's running. Where is it coming from?
 
 <div class="fx" data-fx="scope">
   <p class="eyebrow">Step 4 · The scope with the power off</p>
