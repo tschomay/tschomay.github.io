@@ -86,11 +86,20 @@ to one template:
    `_drafts/TEMPLATE.md` — useful as a starting shape, not a checklist to
    fill mechanically.
 
-There's also a category Ted mentioned but hasn't written yet: **learning
-tools built for his own learning that others could use too** — likely a
-third register, more teaching-oriented, not yet defined by an example. Use
-judgment if one comes up; probably closer to mode 2 than mode 1, but check
-in if unsure.
+There's also a third register: **learning tools — interactive guides that
+teach by doing.** First one is `_posts/2026-10-10-fourier-by-hand.md`
+(Oct 2026). What Ted liked about it, as the shape to follow: short numbered
+steps, each a hands-on widget the reader plays with before the prose
+explains what they just saw; a closing step that applies the idea to a real
+problem (there, diagnosing 60 Hz line noise — framed as "something I've run
+into while tinkering," since Ted had done it but had no single specific
+incident to cite); and a brief pointer to the deeper math (orthogonal basis)
+for readers who want to dig in, without turning the post into a lecture.
+The widgets live in their own `assets/js/<post>.js` + `assets/css/<post>.css`,
+loaded only by that post, and pull colors from the site's palette tokens so
+light/dark both work. Don't put the stylesheet `<link>` as the post's first
+paragraph — Jekyll uses the first paragraph as the `/blog` excerpt, so it
+has to be real text.
 
 ### The "Philosophy" category
 

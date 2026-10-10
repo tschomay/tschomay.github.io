@@ -3,9 +3,9 @@ layout: post
 title: "Every signal is just a pile of sine waves. Try it."
 ---
 
-<link rel="stylesheet" href="/assets/css/fourier.css">
-
 Fourier decomposition is one of those concepts you can study for years and still not have it click until you try it visually. So instead of explaining it, this post hands you the knobs. Four steps, no math required, though the math is sitting right underneath if you want it.
+
+<link rel="stylesheet" href="/assets/css/fourier.css">
 
 ## 1. Meet one sine wave
 
@@ -42,6 +42,8 @@ Here's the claim that sounds wrong the first time you hear it: add up enough smo
 </div>
 
 If you got close, you probably found the pattern on your own: only the odd ones matter, and each one gets smaller — 1, ⅓, ⅕, ⅐ of the first. That recipe *is* the square wave. Fourier's actual insight is that every repeating shape has a recipe like that, and there's exactly one right answer for it.
+
+The reason there's exactly one answer is that sine waves at different frequencies form an *orthogonal basis*: multiply any two of them together, average over a full cycle, and you get zero. Each one measures something the others can't see — which is why, once you found the right height for 1×, adding 3× never changed what the right height for 1× was. That's the thread to pull if you want to go deeper: it's the same idea as x, y and z axes being at right angles, just with infinitely many axes.
 
 ## 3. Draw anything
 
