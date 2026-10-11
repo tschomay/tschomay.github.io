@@ -1,0 +1,21 @@
+/* Z-transform notes post — builds on the .fx widget styles in fourier.css. See assets/js/ztransform.js. */
+
+.zt-split {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.zt-split .zt-stack { min-width: 0; }
+.zt-plane { aspect-ratio: 1 / 1; height: auto; touch-action: none; user-select: none; -webkit-user-select: none; }
+.zt-plane:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+[data-fx="poles"] .zt-plane { cursor: grab; }
+[data-fx="poles"] .zt-plane:active { cursor: grabbing; }
+.zt-split .fx-plot { height: clamp(120px, 18vw, 150px); }
+.zt-freq { height: clamp(90px, 14vw, 110px); margin-top: 0.6rem; }
+.fx .zt-cap { font-family: var(--font-mono); font-size: 0.68rem; color: var(--ink-soft); margin: 0 0 0.25rem; letter-spacing: 0.04em; text-transform: uppercase; }
+
+@media (max-width: 560px) {
+  .zt-split { grid-template-columns: 1fr; }
+  .zt-plane { max-width: 240px; justify-self: center; width: 100%; }
+}
