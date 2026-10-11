@@ -32,8 +32,6 @@ Here's the claim that sounds wrong the first time you hear it: add up enough smo
     <span class="fx-meter" aria-hidden="true"><span></span></span>
     <span class="fx-score" aria-live="polite"></span>
   </div>
-  <p class="fx-eq"></p>
-  <p class="fx-legend">each row is one wave from step 1 · its frequency is fixed · <b>the slider is its amplitude</b> · phase stays at 0</p>
   <div class="fx-harmonics"></div>
   <p class="fx-note" aria-live="polite"></p>
   <div class="fx-bar">

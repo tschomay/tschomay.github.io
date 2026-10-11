@@ -95,7 +95,6 @@
     const score = root.querySelector(".fx-score");
     const note = root.querySelector(".fx-note");
     const showParts = root.querySelector('[name="parts"]');
-    const eq = root.querySelector(".fx-eq");
     const amps = new Array(N).fill(0);
     const sliders = [];
 
@@ -139,15 +138,6 @@
 
     function draw() {
       sliders.forEach((s, i) => { s.nextElementSibling.textContent = fmt(amps[i]); });
-      // Same notation as step 1, one term per wave in the mix (phase is always 0 here).
-      const terms = [];
-      amps.forEach((a, i) => {
-        if (Math.abs(a) < 0.005) return;
-        // Non-breaking spaces inside a term so a narrow screen only wraps between terms.
-        const term = (Math.abs(a).toFixed(2) + " · sin(2π · " + (i + 1) + "t)").replace(/ /g, "\u00a0");
-        terms.push(terms.length ? (a < 0 ? " − " : " + ") + term : (a < 0 ? "−" : "") + term);
-      });
-      eq.textContent = "y = " + (terms.join("") || "0");
       const c = palette(), g = fit(canvas);
       axis(g, c);
       plot(g, target, 1.7, c.soft, 1.5, [5, 5]);
