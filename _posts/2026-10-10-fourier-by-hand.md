@@ -23,7 +23,7 @@ Everything here is built out of one ingredient. A sine wave has three dials: how
 
 ## 2. Now build a square wave out of them
 
-Here's the claim that sounds wrong the first time you hear it: add up enough smooth, round sine waves and you can make a square wave — flat tops, sharp corners and all. You get eight sine waves to work with. Wave 1× repeats once across the window, 2× repeats twice, and so on. The dashed line is the target. See how close you can get.
+Here's the claim that sounds wrong the first time you hear it: add up enough smooth, round sine waves and you can make a square wave — flat tops, sharp corners and all. You get eight sine waves to work with — the same eight frequencies the Frequency slider in step 1 stepped through, 1× up to 8×. Phase is locked at zero for all of them (the square starts its cycle at the same moment every one of these waves does, so there's nothing to shift), which leaves one dial per wave: amplitude, or how much of that frequency goes into the mix. The dashed line is the target. See how close you can get.
 
 <div class="fx" data-fx="square">
   <p class="eyebrow">Step 2 · Match the square</p>
@@ -32,6 +32,8 @@ Here's the claim that sounds wrong the first time you hear it: add up enough smo
     <span class="fx-meter" aria-hidden="true"><span></span></span>
     <span class="fx-score" aria-live="polite"></span>
   </div>
+  <p class="fx-eq"></p>
+  <p class="fx-legend">each row is one wave from step 1 · its frequency is fixed · <b>the slider is its amplitude</b> · phase stays at 0</p>
   <div class="fx-harmonics"></div>
   <p class="fx-note" aria-live="polite"></p>
   <div class="fx-bar">
@@ -41,7 +43,7 @@ Here's the claim that sounds wrong the first time you hear it: add up enough smo
   </div>
 </div>
 
-If you got close, you probably found the pattern on your own: only the odd ones matter, and each one gets smaller — 1, ⅓, ⅕, ⅐ of the first. That recipe *is* the square wave. Fourier's actual insight is that every repeating shape has a recipe like that, and there's exactly one right answer for it.
+If you got close, you probably found the pattern on your own: only the odd frequencies matter, and their amplitudes shrink — 1, ⅓, ⅕, ⅐ of the first. That recipe *is* the square wave. Fourier's actual insight is that every repeating shape has a recipe like that, and there's exactly one right answer for it.
 
 The reason there's exactly one answer is that sine waves at different frequencies form an *orthogonal basis*: multiply any two of them together, average over a full cycle, and you get zero. Each one measures something the others can't see — which is why, once you found the right height for 1×, adding 3× never changed what the right height for 1× was. That's the thread to pull if you want to go deeper: it's the same idea as x, y and z axes being at right angles, just with infinitely many axes.
 

@@ -95,6 +95,7 @@
     const score = root.querySelector(".fx-score");
     const note = root.querySelector(".fx-note");
     const showParts = root.querySelector('[name="parts"]');
+    const eq = root.querySelector(".fx-eq");
     const amps = new Array(N).fill(0);
     const sliders = [];
 
@@ -103,7 +104,7 @@
       row.className = "fx-row";
       row.innerHTML =
         '<span class="fx-k">' + n + "×</span>" +
-        '<input type="range" min="-1.3" max="1.3" step="0.01" value="0" aria-label="Amount of harmonic ' + n + '">' +
+        '<input type="range" min="-1.3" max="1.3" step="0.01" value="0" aria-label="Amplitude of the ' + n + '× wave">' +
         '<output class="fx-v">0.00</output>';
       const input = row.querySelector("input");
       input.addEventListener("input", () => { amps[n - 1] = +input.value; draw(); });
@@ -138,6 +139,15 @@
 
     function draw() {
       sliders.forEach((s, i) => { s.nextElementSibling.textContent = fmt(amps[i]); });
+      // Same notation as step 1, one term per wave in the mix (phase is always 0 here).
+      const terms = [];
+      amps.forEach((a, i) => {
+        if (Math.abs(a) < 0.005) return;
+        // Non-breaking spaces inside a term so a narrow screen only wraps between terms.
+        const term = (Math.abs(a).toFixed(2) + " · sin(2π · " + (i + 1) + "t)").replace(/ /g, "\u00a0");
+        terms.push(terms.length ? (a < 0 ? " − " : " + ") + term : (a < 0 ? "−" : "") + term);
+      });
+      eq.textContent = "y = " + (terms.join("") || "0");
       const c = palette(), g = fit(canvas);
       axis(g, c);
       plot(g, target, 1.7, c.soft, 1.5, [5, 5]);
@@ -154,7 +164,7 @@
       const evens = amps.some((a, i) => (i + 1) % 2 === 0 && Math.abs(a) > 0.08);
       if (m >= bestPct - 0.01) {
         note.textContent = "That’s as close as 8 sine waves can get (" + Math.round(bestPct * 100) +
-          "%). The leftover wiggle lives in harmonics 9, 11, 13… — which is what step 3 is for.";
+          "%). The leftover wiggle lives in the 9×, 11×, 13×… waves — which is what step 3 is for.";
       } else if (m >= 0.85) {
         note.textContent = "Very close. Notice which sliders ended up mattering — and which ones you left at zero.";
       } else if (evens) {
