@@ -39,6 +39,7 @@ Here's the claim that sounds wrong the first time you hear it: add up enough smo
     <button type="button" class="btn" data-act="reset">Reset</button>
     <button type="button" class="btn" data-act="solve">Show me</button>
   </div>
+  <p class="fx-eq fx-eq-foot"></p>
 </div>
 
 If you got close, you probably found the pattern on your own: only the odd frequencies matter, and their amplitudes shrink — 1, ⅓, ⅕, ⅐ of the first. That recipe *is* the square wave. Fourier's actual insight is that every repeating shape has a recipe like that, and there's exactly one right answer for it.
