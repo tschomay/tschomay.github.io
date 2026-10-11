@@ -24,6 +24,8 @@
   margin: 0.6rem 0 0.4rem;
 }
 
+.fx-eq-foot { max-width: none !important; margin: 1rem 0 0; padding-top: 0.8rem; border-top: 1px solid var(--line); }
+
 .fx-row {
   display: grid;
   grid-template-columns: 4.5rem 1fr 3.4rem;
